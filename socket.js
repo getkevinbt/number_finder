@@ -17,6 +17,9 @@ const printer = () => {
 };
 
 const socketController = async (socket) => {
+    console.log(socket.id);
+    console.log(socket.handshake);
+
     if (!flag) {
         flag = !flag;
         // printer();
