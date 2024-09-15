@@ -13,9 +13,10 @@ class Server {
         this.io = require("socket.io")(this.server, {
             cors: {
                 origin: [
-                    "http://localhost:8081",
-                    "http://192.168.1.67:8081",
-                    "http://192.168.1.100:8081",
+                    // "http://localhost:8081",
+                    // "http://192.168.1.67:8081",
+                    // "http://192.168.1.100:8081",
+                    "https://number-finder.onrender.com",
                 ],
                 methods: ["GET", "POST"],
             },
