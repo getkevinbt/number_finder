@@ -1,0 +1,27 @@
+{
+    "name": "number_finder",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app",
+        "test": "nodemon app"
+    },
+    "keywords": [
+        "game",
+        "number",
+        "logic"
+    ],
+    "author": "Kevin Benitez Tellez",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "socket.io": "^4.7.5",
+        "uuid": "^10.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.4"
+    }
+}
