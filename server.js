@@ -8,16 +8,11 @@ const { socketController } = require("./socket");
 class Server {
     constructor() {
         this.app = express().use(cors());
-        this.port = 1000;
+        this.port = process.env.PORT || 1000;
         this.server = createServer(this.app);
         this.io = require("socket.io")(this.server, {
             cors: {
-                origin: [
-                    // "http://localhost:8081",
-                    // "http://192.168.1.67:8081",
-                    // "http://192.168.1.100:8081",
-                    "https://number-finder.onrender.com",
-                ],
+                origin: ["https://number-finder.onrender.com"],
                 methods: ["GET", "POST"],
             },
         });
