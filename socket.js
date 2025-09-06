@@ -6,25 +6,7 @@ const hasRepeatedChar = (s) => {
     return new Set(s).size !== s.length;
 };
 
-let flag = false;
-
-const printer = () => {
-    setTimeout(() => {
-        console.clear();
-        games.printStatus();
-        printer();
-    }, 1000);
-};
-
 const socketController = async (socket) => {
-    console.log(socket.id);
-    console.log(socket.handshake);
-
-    if (!flag) {
-        flag = !flag;
-        // printer();
-    }
-
     const gameStatus = {
         code: undefined,
         side: undefined,
